@@ -1,3 +1,4 @@
+const long long MOD = 1e9 + 7;
 long long enxponent(long long a, long long b) {
     long long res = 1;
     while (b > 0) {
