@@ -2,7 +2,13 @@ int countDivisors(int x) {
     int divisors = 0;
     for (int i = 1; i <= sqrt(x); ++i) {
         if (x % i == 0) {
-            divisors += (i == x / i) ? 1 : 2;
+            if (i == x / i) {
+                divisors += 1;
+            }
+            else {
+                divisors += 2;
+            }
+
         }
     }
     return divisors;
